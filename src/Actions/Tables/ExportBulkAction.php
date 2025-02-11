@@ -1,10 +1,10 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Actions\Tables;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables;
 
 use Filament\Tables\Actions\BulkAction;
 use Illuminate\Database\Eloquent\Collection;
-use pxlrbt\FilamentExcel\Actions\Concerns\ExportableAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Concerns\ExportableAction;
 
 class ExportBulkAction extends BulkAction
 {

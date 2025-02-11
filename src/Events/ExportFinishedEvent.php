@@ -1,6 +1,6 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Events;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 

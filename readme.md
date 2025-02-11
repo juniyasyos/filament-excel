@@ -35,7 +35,7 @@ Install via Composer. This will download the package and [Laravel Excel](https:/
 
 
 ```bash
-composer require pxlrbt/filament-excel
+composer require pxlrbtxjuniyasyos/filament-excel
 ```
 
 ### Laravel > 9
@@ -43,7 +43,7 @@ composer require pxlrbt/filament-excel
 If composer require fails on Laravel 9 or greater because of the simple-cache dependency, you will have to specify the psr/simple-cache version as ^2.0 in your composer.json to satisfy the PhpSpreadsheet dependency. You can install both at the same time as:
 
 ```bash
-composer require psr/simple-cache:^2.0 pxlrbt/filament-excel
+composer require psr/simple-cache:^2.0 pxlrbtxjuniyasyos/filament-excel
 ```
 
 ## Quickstart
@@ -57,7 +57,7 @@ Starting with v0.2 Filament Excel should work with both `filament/filament` and 
 
 namespace App\Filament\Resources;
 
-use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportBulkAction;
 
 class UserResource extends Resource
 {  
@@ -81,7 +81,7 @@ class UserResource extends Resource
 
 namespace App\Filament\Resources;
 
-use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportBulkAction;
 
 public function getTableBulkActions()
 {
@@ -106,8 +106,8 @@ Without further configuration they will try to resolve the fields from the table
 You can overwrite the default export class and also configure multiple exports with different settings. The user will be shown a modal to select the export class he wants to use.
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 ExportAction::make()->exports([
     ExcelExport::make('table')->fromTable(),
@@ -120,8 +120,8 @@ ExportAction::make()->exports([
 Many of the functions for customising the export class, accept a Closure that gets passed dynamic data:
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 ExportAction::make()->exports([
     ExcelExport::make('table')->withFilename(fn ($resource) => $resource::getLabel()),
@@ -141,8 +141,8 @@ The following arguments are available:
 The filename is set via `->withFilename()`:
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 ExportAction::make()->exports([
     // Pass a string
@@ -158,8 +158,8 @@ ExportAction::make()->exports([
 You can set the file type via `->withWriterType()`:
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 ExportAction::make()->exports([
     ExcelExport::make()->withWriterType(\Maatwebsite\Excel\Excel::XLSX),
@@ -172,9 +172,9 @@ ExportAction::make()->exports([
 When using `->fromForm()`/`->fromTable()`/`->fromModel()` the columns are resolved from your table or form definition. You can also provide columns manually, append columns or overwrite generated columns.
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
-use pxlrbt\FilamentExcel\Columns\Column;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Columns\Column;
 
 ExportAction::make()->exports([
     ExcelExport::make()->withColumns([
@@ -188,8 +188,8 @@ ExportAction::make()->exports([
 You can also include only a subset of columns (`->only()`) or exclude certain ones (`->except()`):
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 ExportAction::make()->exports([
     ExcelExport::make()->fromTable()->except([
@@ -209,9 +209,9 @@ When you neither pass `->only()` nor `->except()` the export will also respect t
 When using `->fromForm()`/`->fromTable()`/`->fromModel()` the headings are resolved from your table or form definition. You can also overwrite headings:
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
-use pxlrbt\FilamentExcel\Columns\Column;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Columns\Column;
 
 ExportAction::make()->exports([
     ExcelExport::make()->withColumns([
@@ -229,9 +229,9 @@ If you want to use the column names and don't like the headings auto generated y
 Every column can be formatted by providing a Closure. Additional to the default parameters you get access to `$state` and `$record`.
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
-use pxlrbt\FilamentExcel\Columns\Column;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Columns\Column;
 
 ExportAction::make()->exports([
     ExcelExport::make()->withColumns([
@@ -247,9 +247,9 @@ ExportAction::make()->exports([
 Columns are auto-scaled to fit the content. If you want to overwrite this with a custom column width you can do so:
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
-use pxlrbt\FilamentExcel\Columns\Column;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Columns\Column;
 
 ExportAction::make()->exports([
     ExcelExport::make()->withColumns([
@@ -261,9 +261,9 @@ The underlying package PhpSpreadsheet provides various options for Excel column 
 
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
-use pxlrbt\FilamentExcel\Columns\Column;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Columns\Column;
 use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 
 ExportAction::make()->exports([
@@ -278,9 +278,9 @@ ExportAction::make()->exports([
 When using `->fromForm()`/`->fromTable()` the formatting is resolved from your table or form definition. If you don't want to overwrite every columns `->formatStateUsing()` method, you can ignore the formatting altogher or for specific columns by using `->ignoreFormatting()`:
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
-use pxlrbt\FilamentExcel\Columns\Column;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Columns\Column;
 
 ExportAction::make()->exports([
     // Ignore all formatting
@@ -305,7 +305,7 @@ When the state of column is not a string, it is run through a formatter even if 
 Currently there are 3 formatters: `ArrayFormatter`, `EnumFormatter` and `ObjectFormatter`. You can swap out any implementation via Laravel's service container, for example to use a different delimiter for the `ArrayFormatter`:
 
 ```php
-use pxlrbt\FilamentExcel\Exports\Formatters\ArrayFormatter;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\Formatters\ArrayFormatter;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -323,8 +323,8 @@ class AppServiceProvider extends ServiceProvider
 You can let the user pick a filename and writer type by using `->askForFilename()` and `->askForWriterType()`:
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 ExportAction::make()->exports([
     ExcelExport::make()
@@ -336,8 +336,8 @@ ExportAction::make()->exports([
 You can also use the users input inside a Closure:
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 ExportAction::make()->exports([
     ExcelExport::make()
@@ -351,8 +351,8 @@ ExportAction::make()->exports([
 You can modify the query that is used to retrieve the model by using `->modifyQueryUsing()`:
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 ExportAction::make()->exports([
     ExcelExport::make()
@@ -368,8 +368,8 @@ Exports for resources with many entries can take some time and therefore can be 
 The temporary file will be deleted after the first download. Files that are not downloaded will be deleted by a scheduled command after 24 hours.
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 ExportAction::make()->exports([
     ExcelExport::make()->queue()
@@ -379,8 +379,8 @@ ExportAction::make()->exports([
 The size of exported records per Job can be adjusted by using `->withChunkSize()`:
 
 ```php
-se pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+se pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 ExportAction::make()->exports([
     ExcelExport::make()->queue()->withChunkSize(100)
@@ -393,9 +393,9 @@ ExportAction::make()->exports([
 If you need even more customization or want to clean up your resources by separating the export code, you can extend the ExcelExport class and configure it using `setUp()`:
 
 ```php
-use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
-use pxlrbt\FilamentExcel\Columns\Column;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Columns\Column;
 
 class CustomExport extends ExcelExport
 {
@@ -418,7 +418,7 @@ The URL contains the filename including the extension. Some WAF (Web Application
 
 ```php
 // Somewhere in a ServiceProvider in the `boot()` method.
-use pxlrbt\FilamentExcel\FilamentExport;
+use pxlrbtxjuniyasyos\FilamentExcel\FilamentExport;
 
 FilamentExport::createExportUrlUsing(function ($export) {
     $fileInfo = pathinfo($export['filename']);
@@ -446,7 +446,7 @@ Install the packages in your app's `composer.json`:
 
 ```json
 "require": {
-    "pxlrbt/filament-excel": "dev-fix/error-message as main-dev",
+    "pxlrbtxjuniyasyos/filament-excel": "dev-fix/error-message as main-dev",
 },
 "repositories": [
     {

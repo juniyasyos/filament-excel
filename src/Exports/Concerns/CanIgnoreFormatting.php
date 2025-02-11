@@ -1,9 +1,9 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Exports\Concerns;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Exports\Concerns;
 
 use Closure;
-use pxlrbt\FilamentExcel\Columns\Column;
+use pxlrbtxjuniyasyos\FilamentExcel\Columns\Column;
 
 trait CanIgnoreFormatting
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Columns;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Columns;
 
 use Closure;
 use Filament\Support\Concerns\EvaluatesClosures;

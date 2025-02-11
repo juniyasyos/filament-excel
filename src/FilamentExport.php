@@ -1,6 +1,6 @@
 <?php
 
-namespace pxlrbt\FilamentExcel;
+namespace pxlrbtxjuniyasyos\FilamentExcel;
 
 use Closure;
 use Filament\Facades\Filament;

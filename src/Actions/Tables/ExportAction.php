@@ -1,10 +1,10 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Actions\Tables;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Actions\Tables;
 
 use Filament\Tables\Actions\Action;
-use pxlrbt\FilamentExcel\Actions\Concerns\ExportableAction;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Actions\Concerns\ExportableAction;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 class ExportAction extends Action
 {

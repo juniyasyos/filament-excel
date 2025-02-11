@@ -1,6 +1,6 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Exports\Concerns;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Exports\Concerns;
 
 use Closure;
 use Filament\Forms\Components\Field;
@@ -11,7 +11,7 @@ use Filament\Tables;
 use Filament\Tables\Contracts\HasTable;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Support\Collection;
-use pxlrbt\FilamentExcel\Columns\Column;
+use pxlrbtxjuniyasyos\FilamentExcel\Columns\Column;
 
 use function Livewire\invade;
 

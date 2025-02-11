@@ -1,13 +1,13 @@
 <?php
 
-namespace pxlrbt\FilamentExcel;
+namespace pxlrbtxjuniyasyos\FilamentExcel;
 
 use Filament\Facades\Filament;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Str;
-use pxlrbt\FilamentExcel\Commands\PruneExportsCommand;
-use pxlrbt\FilamentExcel\Events\ExportFinishedEvent;
+use pxlrbtxjuniyasyos\FilamentExcel\Commands\PruneExportsCommand;
+use pxlrbtxjuniyasyos\FilamentExcel\Events\ExportFinishedEvent;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

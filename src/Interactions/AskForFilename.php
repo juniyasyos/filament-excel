@@ -1,6 +1,6 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Interactions;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Interactions;
 
 use Filament\Forms\Components\TextInput;
 

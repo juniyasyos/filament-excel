@@ -1,5 +1,5 @@
 {
-    "name": "pxlrbt/filament-excel",
+    "name": "juniyasyos/filament-excel",
     "description": "Supercharged Excel exports for Filament Resources",
     "license": "MIT",
     "keywords": [
@@ -12,8 +12,8 @@
     ],
     "authors": [
         {
-            "name": "Dennis Koch",
-            "email": "info@pixelarbeit.de"
+            "name": "Juniyasyos",
+            "email": "your-email@example.com"
         }
     ],
     "require": {
@@ -27,13 +27,13 @@
     },
     "autoload": {
         "psr-4": {
-            "pxlrbt\\FilamentExcel\\": "src/"
+            "Juniyasyos\\FilamentExcel\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "pxlrbt\\FilamentExcel\\FilamentExcelServiceProvider"
+                "Juniyasyos\\FilamentExcel\\FilamentExcelServiceProvider"
             ]
         }
     },

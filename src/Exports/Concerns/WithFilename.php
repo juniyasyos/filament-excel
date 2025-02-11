@@ -1,6 +1,6 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Exports\Concerns;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Exports\Concerns;
 
 use Closure;
 use Illuminate\Support\Str;

@@ -1,12 +1,12 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Exports\Concerns;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Exports\Concerns;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use pxlrbt\FilamentExcel\Columns\Column;
-use pxlrbt\FilamentExcel\Exports\Formatters\Formatter;
+use pxlrbtxjuniyasyos\FilamentExcel\Columns\Column;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\Formatters\Formatter;
 
 trait WithMapping
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Exports\Formatters;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Exports\Formatters;
 
 use Filament\Support\Contracts\HasLabel;
 use UnitEnum;

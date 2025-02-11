@@ -1,13 +1,13 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Actions\Concerns;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Actions\Concerns;
 
 use Closure;
 use Exception;
 use Filament\Forms\Components\Group;
 use Filament\Forms\Components\Select;
 use Illuminate\Support\Collection;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use pxlrbtxjuniyasyos\FilamentExcel\Exports\ExcelExport;
 
 trait ExportableAction
 {

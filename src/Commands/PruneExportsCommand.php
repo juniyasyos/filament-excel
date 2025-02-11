@@ -1,6 +1,6 @@
 <?php
 
-namespace pxlrbt\FilamentExcel\Commands;
+namespace pxlrbtxjuniyasyos\FilamentExcel\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
