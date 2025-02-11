@@ -20,7 +20,7 @@ trait ExportableAction
         $this->modalWidth('md');
 
         $this->label(__('filament-excel::actions.label'));
-        $this->icon('heroicon-o-arrow-down-tray');
+        $this->icon('heroicon-o-arrow-up-tray');
         $this->action(Closure::fromCallable([$this, 'handleExport']));
 
         $this->form(function () {

@@ -233,7 +233,7 @@ class ExcelExport implements FromQuery, HasHeadings, HasMapping, ShouldAutoSize,
             ->body(__('filament-excel::notifications.queued.body'))
             ->success()
             ->seconds(5)
-            ->icon('heroicon-o-arrow-down-tray')
+            ->icon('heroicon-o-arrow-up-tray')
             ->send();
     }
 

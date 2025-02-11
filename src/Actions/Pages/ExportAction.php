@@ -22,7 +22,7 @@ class ExportAction extends Action
         $this->parentSetUp();
 
         $this->defaultView(static::BUTTON_VIEW);
-        $this->icon('heroicon-o-arrow-down-tray');
+        $this->icon('heroicon-o-arrow-up-tray');
 
         $this->exports = collect([
             ExcelExport::make()->fromForm(),
