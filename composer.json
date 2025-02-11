@@ -27,13 +27,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Juniyasyos\\FilamentExcel\\": "src/"
+            "pxlrbtxjuniyasyos\\FilamentExcel\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Juniyasyos\\FilamentExcel\\FilamentExcelServiceProvider"
+                "pxlrbtxjuniyasyos\\FilamentExcel\\FilamentExcelServiceProvider"
             ]
         }
     },
